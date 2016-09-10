@@ -1,0 +1,33 @@
+{
+	"name": "lionar/agreements",
+	"description": "Lionar's interfaces used throughout all sorts of lionar components",
+	"keywords": [ "Lionar", "Component", "Agreements" ],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Aron Wouters",
+			"email": "lionar@mail.com",
+			"role": "Developer"
+		}
+	],
+	"require" : {
+		"php": ">=5.5.9"
+  	},
+	"require-dev": {
+		
+	},
+	"autoload": {
+    	"psr-4": {
+			"Agreed\\": [ "source" ]
+   	 	}
+  	},
+	"autoload-dev": {
+    	"psr-4": {
+			"Agreed\\Tests\\" : [ "tests" ]
+		}
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev"
+}
