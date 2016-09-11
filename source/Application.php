@@ -39,4 +39,13 @@ interface Application
 	 * @return boolean           	True if registered false if not
 	 */
 	public function has ( $abstract ) : bool;
+
+	/**
+	 * Resolve the results of a closure injecting needed dependencies
+	 * 
+	 * @param  Closure $concrete 	The closure to resolve
+	 * @param  array   $payload  	Optional arguments to resolve the closure with
+	 * @return mixed            	The results of the resolved closure
+	 */
+	public function call ( Closure $concrete, array $payload = array ( ) );
 }
