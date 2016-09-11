@@ -2,6 +2,8 @@
 
 namespace Agreed;
 
+use Closure;
+
 interface Application
 {
 	/**
