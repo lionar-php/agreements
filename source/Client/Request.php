@@ -1,6 +1,6 @@
 <?php
 
-namespace Agreed;
+namespace Agreed\Client;
 
 abstract class Request
 {
