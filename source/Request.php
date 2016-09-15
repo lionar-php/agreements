@@ -9,6 +9,11 @@ abstract class Request
 	 */
 	protected $attributes = array ( );
 
+	public function __construct ( array $attributes = array ( ) )
+	{
+		$this->attributes = $attributes;
+	}
+
 	public function __get ( $property )
 	{
 		if ( isset ( $this-> { $property } ) )
