@@ -100,4 +100,49 @@ class StoreTest extends TestCase
 		$this->stack->shouldReceive ( 'get' )->with ( $identifier )->once ( )->andReturn ( $entity );
 		assertThat ( $this->store->get ( $identifier ), is ( identicalTo ( $entity ) ) );
 	}
+
+	/*
+	|--------------------------------------------------------------------------
+	| Has method testing.
+	|--------------------------------------------------------------------------
+	*/
+
+	/**
+	 * @test
+	 * @expectedException  InvalidArgumentException
+	 * @dataProvider  nonStringValues
+	 */
+	public function has_withNonStringValueForIdentifier_throwsException ( $value )
+	{
+		$this->store->has ( $value );
+	}
+
+	/**
+	 * @test
+	 * @expectedException  InvalidArgumentException
+	 */
+	public function has_withEmptyStringValueForIdentifier_throwsException ( )
+	{
+		$this->store->has ( '' );
+	}
+
+	/**
+	 * @test
+	 */
+	public function has_withIdentifierThatDoesNotExistOnStore_returnsFalse ( )
+	{
+		$identifier = 'id';
+		$this->stack->shouldReceive ( 'has' )->with ( $identifier )->once ( )->andReturn ( false );
+		$this->store->has ( $identifier );
+	}
+
+	/**
+	 * @test
+	 */
+	public function has_withIdentifierThatDoesExistOnStore_returnsTrue ( )
+	{
+		$identifier = 'id';
+		$this->stack->shouldReceive ( 'has' )->with ( $identifier )->once ( )->andReturn ( true );
+		$this->store->has ( $identifier );
+	}
 }

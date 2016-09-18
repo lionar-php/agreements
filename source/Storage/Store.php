@@ -27,6 +27,12 @@ class Store
 			throw new IdentifierNotFoundException ( "$identifier has not been found" );
 		return $this->stack->get ( $identifier );
 	}
+
+	public function has ( $identifier ) : bool
+	{
+		$this->check ( $identifier );
+		return $this->stack->has ( $identifier );
+	}
 	
 	private function check ( $identifier )
 	{
