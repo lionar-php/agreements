@@ -17,7 +17,7 @@ class Store
 	public function save ( $identifier, $entity )
 	{
 		$this->check ( $identifier );
-		$this->stack->append ( $identifier, $entity );
+		$this->stack->set ( $identifier, $entity );
 	}
 
 	public function get ( $identifier )

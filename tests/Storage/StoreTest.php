@@ -49,7 +49,7 @@ class StoreTest extends TestCase
 	{
 		$entity = 'my entity';
 		$identifier = 'bench press';
-		$this->stack->shouldReceive ( 'append' )->with ( $identifier, $entity )->once ( );
+		$this->stack->shouldReceive ( 'set' )->with ( $identifier, $entity )->once ( );
 		$this->store->save ( $identifier, $entity );
 	}
 
