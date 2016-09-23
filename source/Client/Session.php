@@ -28,4 +28,13 @@ interface Session
 	 * @param mixed $value 			The value you want to store under the key for the next request only.
 	 */
 	public function flash ( $key, $value );
+
+	/**
+	 * Get a value by key that was flashed out of the session.
+	 * 
+	 * @param  string $key     		The key that was flashed to get the value from out of the session.
+	 * @param  mixed  $default 		The value to return when the flashed key could not be found in the session.
+	 * @return mixed          		The value that was stored under the flashed key in the session or the default value you supplied.
+	 */
+	public function flashed ( $key, $default = null );
 }
