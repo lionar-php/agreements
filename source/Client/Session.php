@@ -1,6 +1,6 @@
 <?php
 
-namespace Client;
+namespace Agreed\Client;
 
 interface Session
 {
