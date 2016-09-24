@@ -22,6 +22,13 @@ interface Stack
 	public function has ( $identifier ) : bool;
 
 	/**
+	 * Get all values from the stack.
+	 * 
+	 * @return array 					All the values that are in the stack.
+	 */
+	public function all ( ) : array;
+
+	/**
 	 * Get a value from the stack.
 	 * 
 	 * @param  mixed $identifier 		The identifier to get the value from.

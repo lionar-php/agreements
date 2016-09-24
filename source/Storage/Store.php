@@ -20,6 +20,11 @@ class Store
 		$this->stack->set ( $identifier, $entity );
 	}
 
+	public function all ( ) : array
+	{
+		return $this->stack->all ( );
+	}
+
 	public function get ( $identifier )
 	{
 		$this->check ( $identifier );
