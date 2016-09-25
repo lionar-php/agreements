@@ -3,7 +3,6 @@
 	"description": "Lionar's interfaces used throughout all sorts of lionar components.",
 	"keywords": [ "Lionar", "Component", "Agreements" ],
 	"license": "MIT",
-	"type": "agreements",
 	"authors": [
 		{
 			"name": "Aron Wouters",
@@ -12,7 +11,6 @@
 		}
 	],
 	"require" : {
-		"lionar/composer": "*",
 		"php": ">=5.5.9"
   	},
 	"require-dev": {

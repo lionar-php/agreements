@@ -4,61 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0560d9bb33eb53dba20047065d654022",
-    "content-hash": "d0f30831c7954149eaadfb89e79e780b",
-    "packages": [
-        {
-            "name": "lionar/composer",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lionar/composer.git",
-                "reference": "9f6e69dfc4a360720440b26f85ffd64232238c1b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lionar/composer/zipball/9f6e69dfc4a360720440b26f85ffd64232238c1b",
-                "reference": "9f6e69dfc4a360720440b26f85ffd64232238c1b",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "lionar/testing": "*"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Composer\\Plugins\\Agreements"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Composer\\": [
-                        "source"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aron Wouters",
-                    "email": "lionar@mail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Lionar's custom composer installer.",
-            "keywords": [
-                "composer",
-                "installer",
-                "lionar"
-            ],
-            "time": "2016-09-25 10:31:51"
-        }
-    ],
+    "hash": "880b3adeb4922d062be7a52a8609c556",
+    "content-hash": "a6d0d126cbde4313f39524caa598f1f9",
+    "packages": [],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
