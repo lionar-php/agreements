@@ -4,9 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "880b3adeb4922d062be7a52a8609c556",
-    "content-hash": "a6d0d126cbde4313f39524caa598f1f9",
-    "packages": [],
+    "hash": "ec002116fbceada413336689b3f5bb87",
+    "content-hash": "957fad18750d15fcd1ad466d615322f2",
+    "packages": [
+        {
+            "name": "lionar/support",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/support.git",
+                "reference": "0ca4e66e946a464455d93544e462b5ac761828c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/support/zipball/0ca4e66e946a464455d93544e462b5ac761828c3",
+                "reference": "0ca4e66e946a464455d93544e462b5ac761828c3",
+                "shasum": ""
+            },
+            "require-dev": {
+                "lionar/testing": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Support\\": "source"
+                },
+                "files": [
+                    "helpers/arrays.php",
+                    "helpers/classes.php",
+                    "helpers/serialization.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Supporting tools and functions.",
+            "keywords": [
+                "component",
+                "lionar",
+                "support"
+            ],
+            "time": "2016-09-27 11:25:11"
+        }
+    ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
@@ -116,12 +164,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lionar/testing.git",
-                "reference": "76e306e5379c08e685da54433c5fdbcb85b9fca5"
+                "reference": "06d982d3cc6599aab610924055eac44661e566ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lionar/testing/zipball/76e306e5379c08e685da54433c5fdbcb85b9fca5",
-                "reference": "76e306e5379c08e685da54433c5fdbcb85b9fca5",
+                "url": "https://api.github.com/repos/lionar/testing/zipball/06d982d3cc6599aab610924055eac44661e566ed",
+                "reference": "06d982d3cc6599aab610924055eac44661e566ed",
                 "shasum": ""
             },
             "require": {
@@ -151,7 +199,7 @@
                 "lionar",
                 "unit testing"
             ],
-            "time": "2016-09-24 13:38:02"
+            "time": "2016-09-26 22:24:17"
         },
         {
             "name": "mikey179/vfsStream",
@@ -1586,12 +1634,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "7fbb0dfc86370757774ff2d9bd5c3b89c9aac1a8"
+                "reference": "ef38bb2d8e9341a7a052526330b0f6693fb95138"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/7fbb0dfc86370757774ff2d9bd5c3b89c9aac1a8",
-                "reference": "7fbb0dfc86370757774ff2d9bd5c3b89c9aac1a8",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/ef38bb2d8e9341a7a052526330b0f6693fb95138",
+                "reference": "ef38bb2d8e9341a7a052526330b0f6693fb95138",
                 "shasum": ""
             },
             "require": {
@@ -1633,7 +1681,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-20 08:33:13"
+            "time": "2016-09-25 16:21:58"
         },
         {
             "name": "webmozart/assert",

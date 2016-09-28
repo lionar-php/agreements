@@ -2,8 +2,12 @@
 
 namespace Agreed\Client;
 
+use Support\Accessibility\Accessible;
+
 abstract class Request
 {
+	use Accessible;
+
 	/**
 	 * The data that the client provided with the request
 	 */
@@ -12,11 +16,5 @@ abstract class Request
 	public function __construct ( array $attributes = array ( ) )
 	{
 		$this->attributes = $attributes;
-	}
-
-	public function __get ( $property )
-	{
-		if ( isset ( $this-> { $property } ) )
-			return $this-> { $property };
 	}
 }
