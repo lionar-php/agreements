@@ -24,7 +24,8 @@
   	},
 	"autoload-dev": {
     	"psr-4": {
-			"Agreed\\Tests\\" : [ "tests" ]
+    		"Agreed\\Client\\Tests\\" : [ "tests/Client" ],
+			"Agreed\\Storage\\Tests\\" : [ "tests/Storage" ]
 		}
 	},
 	"config": {

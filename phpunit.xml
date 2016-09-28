@@ -10,8 +10,14 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false">
-    <testsuite name="agreements">
+    <testsuite name="all">
         <directory>tests</directory>
+    </testsuite>
+    <testsuite name="client">
+        <directory>tests/Client</directory>
+    </testsuite>
+    <testsuite name="Storage">
+        <directory>tests/Storage</directory>
     </testsuite>
     <filter>
         <whitelist>
