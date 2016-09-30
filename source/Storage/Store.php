@@ -1,8 +1,8 @@
 <?php
 
-namespace Agreed\Storage;
+namespace Agreed\Technical\Storage;
 
-use Agreed\Storage\Exceptions\IdentifierNotFoundException;
+use Agreed\Technical\Storage\Exceptions\IdentifierNotFoundException;
 use InvalidArgumentException;
 
 class Store

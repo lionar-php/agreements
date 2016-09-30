@@ -1,6 +1,6 @@
 <?php
 
-namespace Agreed\Client\Tests;
+namespace Agreed\Technical\Client\Tests;
 
 use Mockery;
 use Testing\TestCase;
@@ -14,7 +14,7 @@ class RequestTest extends TestCase
 	 */
 	public function __construct_withNonStringValueForBase_throwsException ( $value )
 	{
-		$request = Mockery::mock ( 'Agreed\\Client\\Request[]', array ( $value ) );
+		$request = Mockery::mock ( 'Agreed\\Technical\\Client\\Request[]', array ( $value ) );
 	}
 
 	/**
@@ -23,7 +23,7 @@ class RequestTest extends TestCase
 	public function __construct_withStringForBase_setsBaseOnRequest ( )
 	{
 		$URL = 'http://eyedouble.nl/';
-		$request = Mockery::mock ( 'Agreed\\Client\\Request[]', array ( $URL ) );
+		$request = Mockery::mock ( 'Agreed\\Technical\\Client\\Request[]', array ( $URL ) );
 		assertThat ( $request->base, is ( identicalTo ( $URL ) ) );
 	}
 
@@ -33,7 +33,7 @@ class RequestTest extends TestCase
 	public function __construct_withArrayForAttributes_setsArrayAsAtributesOnRequest ( )
 	{
 		$attributes = array ( 'name' => 'Aron', 'city' => 'Nijmegen' );
-		$request = Mockery::mock ( 'Agreed\\Client\\Request[]', array ( '', $attributes ) );
+		$request = Mockery::mock ( 'Agreed\\Technical\\Client\\Request[]', array ( '', $attributes ) );
 		assertThat ( $request->attributes, is ( identicalTo ( $attributes ) ) );
 	}
 }

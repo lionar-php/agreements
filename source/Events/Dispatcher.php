@@ -1,6 +1,6 @@
 <?php
 
-namespace Agreed\Events;
+namespace Agreed\Technical\Events;
 
 interface Dispatcher
 {

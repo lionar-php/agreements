@@ -1,6 +1,6 @@
 <?php
 
-namespace Agreed;
+namespace Agreed\Technical;
 
 use Closure;
 

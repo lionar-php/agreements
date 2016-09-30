@@ -1,8 +1,8 @@
 <?php
 
-namespace Agreed\Storage\Tests;
+namespace Agreed\Technical\Storage\Tests;
 
-use Agreed\Storage\Store;
+use Agreed\Technical\Storage\Store;
 use Mockery;
 use Testing\TestCase;
 
@@ -12,7 +12,7 @@ class StoreTest extends TestCase
 
 	public function setUp ( )
 	{
-		$stack = Mockery::mock ( 'Agreed\\Storage\\Stack' );
+		$stack = Mockery::mock ( 'Agreed\\Technical\\Storage\\Stack' );
 		$this->store = new Store ( $stack );
 		$this->stack = $stack;
 	}
@@ -95,7 +95,7 @@ class StoreTest extends TestCase
 
 	/**
 	 * @test
-	 * @expectedException Agreed\Storage\Exceptions\IdentifierNotFoundException
+	 * @expectedException Agreed\Technical\Storage\Exceptions\IdentifierNotFoundException
 	 */
 	public function get_withIdentifierThatDoesNotExist_throwsException ( )
 	{

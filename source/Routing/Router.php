@@ -1,6 +1,6 @@
 <?php
 
-namespace Agreed\Routing;
+namespace Agreed\Technical\Routing;
 
 interface Router
 {

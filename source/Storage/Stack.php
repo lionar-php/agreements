@@ -1,6 +1,6 @@
 <?php
 
-namespace Agreed\Storage;
+namespace Agreed\Technical\Storage;
 
 interface Stack
 {

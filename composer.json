@@ -19,13 +19,13 @@
 	},
 	"autoload": {
     	"psr-4": {
-			"Agreed\\": [ "source" ]
+			"Agreed\\Technical\\": [ "source" ]
    	 	}
   	},
 	"autoload-dev": {
     	"psr-4": {
-    		"Agreed\\Client\\Tests\\" : [ "tests/Client" ],
-			"Agreed\\Storage\\Tests\\" : [ "tests/Storage" ]
+    		"Agreed\\Technical\\Client\\Tests\\" : [ "tests/Client" ],
+			"Agreed\\Technical\\Storage\\Tests\\" : [ "tests/Storage" ]
 		}
 	},
 	"config": {
