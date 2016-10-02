@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lionar/support.git",
-                "reference": "0ca4e66e946a464455d93544e462b5ac761828c3"
+                "reference": "afb6fe4bd43e2ce2245261cbe62a9dc70888bad9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lionar/support/zipball/0ca4e66e946a464455d93544e462b5ac761828c3",
-                "reference": "0ca4e66e946a464455d93544e462b5ac761828c3",
+                "url": "https://api.github.com/repos/lionar/support/zipball/afb6fe4bd43e2ce2245261cbe62a9dc70888bad9",
+                "reference": "afb6fe4bd43e2ce2245261cbe62a9dc70888bad9",
                 "shasum": ""
             },
             "require-dev": {
@@ -27,7 +27,9 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Support\\": "source"
+                    "Accessibility\\": "source/Accessibility",
+                    "Arrays\\": "source/Arrays",
+                    "Facades\\": "source/Facades"
                 },
                 "files": [
                     "helpers/arrays.php",
@@ -52,7 +54,7 @@
                 "lionar",
                 "support"
             ],
-            "time": "2016-09-27 11:25:11"
+            "time": "2016-10-01 14:48:29"
         }
     ],
     "packages-dev": [
@@ -506,12 +508,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "c1016e6501312201ede77e3911748024d78cdd31"
+                "reference": "71c790690bebbcfecd1e2de058160170e7c911c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/c1016e6501312201ede77e3911748024d78cdd31",
-                "reference": "c1016e6501312201ede77e3911748024d78cdd31",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/71c790690bebbcfecd1e2de058160170e7c911c7",
+                "reference": "71c790690bebbcfecd1e2de058160170e7c911c7",
                 "shasum": ""
             },
             "require": {
@@ -561,7 +563,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2016-09-28 11:19:12"
+            "time": "2016-10-02 12:37:45"
         },
         {
             "name": "phpunit/php-code-coverage",

@@ -3,11 +3,11 @@
 namespace Agreed\Technical\Client;
 
 use InvalidArgumentException;
-use Support\Accessibility\Accessible;
+use Accessibility\Readable;
 
 abstract class Request
 {
-	use Accessible;
+	use Readable;
 
 	/**
 	 * The base of the request.
