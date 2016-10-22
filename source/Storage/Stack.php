@@ -14,7 +14,7 @@ interface Stack
 	public function set ( $identifier, $value );
 
 	/**
-	 * Check wether this stack has the identifier given registered.
+	 * Check whether this stack has the identifier given registered.
 	 * 
 	 * @param  string  $identifier 		The identifier to check for registration.
 	 * @return boolean             		True if registered false if not.
