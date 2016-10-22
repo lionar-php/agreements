@@ -1,6 +1,6 @@
 <?php
 
-namespace Agreed\Technical\View\Engine;
+namespace Agreed\Technical\View;
 
 interface Engine
 {
