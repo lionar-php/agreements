@@ -25,7 +25,7 @@
 	"autoload-dev": {
 	    	"psr-4": {
 	    		"Agreed\\Technical\\Client\\Tests\\" 	: "tests/Client",
-			"Agreed\\Technical\\Storage\\Tests\\" 	: "tests/Storage",
+				"Agreed\\Technical\\Storage\\Tests\\" 	: "tests/Storage",
     			"Agreed\\Technical\\Tests"		: "tests"
 		}
 	},
